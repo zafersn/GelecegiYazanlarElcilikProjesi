@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/wall">
+
+<!--     <EditText -->
+<!--         android:id="@+id/sehir_giris_edt" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:ems="10" > -->
+
+       
+<!--     </EditText> -->
+
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/sehir_giris_edt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/sehir_giris_edt"
+       android:inputType="textFilter"
+       android:digits="@string/edittex_giris_yonetimi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sehir_giris_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/butn_ilerle" />
+
+</RelativeLayout>
